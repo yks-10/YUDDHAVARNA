@@ -1,0 +1,66 @@
+{% extends 'web/base.html' %}
+
+{% block content %}
+{% load static %}
+<h3> TECHNICAL EVENTS</h3>
+<span>Click here for <a class="button" href="{% url 'nevents' %}">NON_TECHNICAL_EVENTS</a></span>
+<hr>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+
+    <div class="card text-white bg-dark mb-3">
+      <img src="{% static 'web/ppt.png' %}" class="img-fluid">
+      <div class="card-body">
+        <h5 class="card-header bg-transparent border-secondary ">INNVO PRESENTATION</h5>
+        <p class="card-text">Paper presentation is an individual competition where each participant is required to make a paper about a given topic or area, and then present it in front of the juries.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card text-white bg-info mb-3">
+      <img src="{% static 'web/code.png' %}" class="img-fluid">
+      <div class="card-body">
+        <h5 class="card-header bg-transparent border-secondary ">CODE WIZARD</h5>
+        <p class="card-text">CodeWizard is the most fun and effective coding task. It is specially designed for all the tech junkies out there to showcase their coding talent and to identify the best programming</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card border-secondary mb-3">
+      <img src="{% static 'web/quiz.png' %}" class="img-fluid">
+      <div class="card-body">
+        <h5 class="card-header bg-transparent border-secondary ">TECH QUIZ</h5>
+        <p class="card-text">A quiz is a game which can also be called a mind sport wherein the players, either as individuals or in teams attempt to answer questions posed to them correctly.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card text-white bg-info mb-3">
+       <img src="{% static 'web/hotspot.png' %}" class="img-fluid">
+      <div class="card-body">
+        <h5 class="card-header bg-transparent border-secondary ">KEY CRACK</h5>
+        <p class="card-text">PASSWORD CRACK is a real game of erudition. your goal is to find the letters with the help of some clues and that make up the password. There are a number of techniques that can be used to crack passwords, what is yours?</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card border-secondary mb-3">
+       <img src="{% static 'web/logo.png' %}" class="img-fluid">
+      <div class="card-body">
+        <h5 class="card-header bg-transparent border-secondary ">LOGO_DESIGNING</h5>
+        <p class="card-text">Design can be art. Design can be aesthetics. Design is so simple, that's why it is so complicated.Good design is a sign of good business. Logo design is all about creating the perfect visual brand mark for a product or company.A good logo shows what a company does and what the brand values.Branding is the process of building a brand and it can be done to the best by  designing logos.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card text-white bg-dark mb-3">
+      <img src="{% static 'web/debate.png' %}" class="img-fluid">
+      <div class="card-body">
+        <h5 class="card-header bg-transparent border-secondary ">CREW CLASH (Debate)</h5>
+        <p class="card-text">Without clash, there isn’t any debate. A debate is an organized clash of good ideas.  Crew clash is a battle based event, refuting another debater’s argument. Debaters must clash directly and specifically to their opponents' arguments.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

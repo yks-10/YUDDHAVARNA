@@ -1,0 +1,47 @@
+{% extends "web/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<hr>
+
+  <center><h1>M KUMARASAMY COLLEGE OF ENGINEERING</h1></center>
+
+  <div class="row justify-content-center my-3">
+    <div class="col-5">
+      <img src="{% static 'web/2.jpeg' %}" class="img-fluid">
+    </div>
+  </div>
+  <div class="row justify-content-center mb-3">
+    <div class="col-md-9 text-center">
+      <h1 id="hometext" class="font-weight-bold">YUDDHAVARNA</h1>
+      <span>29-APR-2000 | 30-APR-2000</span>
+      <p>Know about these breathtaking Tech Events and fun events organized by Computer science and engineering student.
+  Whether you are good at technical or any other field, Yuddhavarna conduct the event for all. 2022 Yuddhavarna will surely get your attention.Participate in these events and stand a chance to win exciting prizes.Mark their dates well and get yourself prepared as these events are the most awaited events of M.Kumarasamy college of engineering.</p>
+    <div class="col-b-5 text-center">
+      <H5>CLICK HERE TO REGISTER <a type="button" class="btn btn-success" href="{% url 'register' %}">Register</a></h5>
+      <br>
+    </div>
+    </div>
+  </div>
+  <hr>
+  <br>
+  <div class="row justify-content-center mb-3">
+    <div class="col-md-9 text-center">
+      <h1 id="demo" class="font-weight-bold"></h1>
+
+    </div>
+  </div>
+  <hr>
+
+
+  <br>
+
+  <div class="row justify-content-center my-3">
+    <div class="col-14">
+      <img src="{% static 'web/broucher.png' %}" class="img-fluid">
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "web/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+ <div class="row justify-content-center my-3">
+    <div class="col-5">
+      <img src="{% static 'web/successs.gif' %}" class="img-fluid">
+        <span>Click here for <a class="button" href="{% url 'tevents' %}">Home</a></span>
+    </div>
+  </div>
+
+{% endblock %}

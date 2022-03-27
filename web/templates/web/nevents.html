@@ -1,0 +1,55 @@
+{% extends 'web/base.html' %}
+
+{% block content %}
+{% load static %}
+<h3> NON TECHNICAL EVENTS</h3>
+<span>Click here for <a class="button" href="{% url 'tevents' %}">TECHNICAL_EVENTS</a></span>
+<hr>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card text-white bg-info mb-3">
+      <img src="{% static 'web/sh.png' %}" class="img-fluid">
+      <div class="card-body">
+        <h5 class="card-header bg-transparent border-secondary ">SHERLOCK HOLMES</h5>
+        <p class="card-text">Sherlock Holmes is a three level of detective games which will test your brain and also your memory power. While playing, you might find clues that seem unconnected. Sometimes they are dead ends but sometimes they will lead you to solve the cases. Are you ready to solve the mystery?</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card text-white bg-dark mb-3">
+      <img src="{% static 'web/mrms.png' %}" class="img-fluid">
+      <div class="card-body">
+        <h5 class="card-header bg-transparent border-secondary ">Mr & Ms YUDDHAVARNA</h5>
+        <p class="card-text">Mr and Ms Yudhavarna is the most awaited event by a student newly stepped into our college, where being Mr. or Miss Yudhavarna is the movement of pride. Try to capture the attention of juries to win the title.</p>
+      </div>
+    </div>
+  </div>
+</div>
+  <hr>
+  <h2>FUN EVENTS</h2>
+  <hr>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card border-secondary mb-3">
+      <img src="{% static 'web/cini.png' %}" class="img-fluid">
+      <div class="card-body">
+        <h5 class="card-header bg-transparent border-secondary ">CINI MARATHON</h5>
+      </div>
+    </div>
+    <div class="card border-secondary mb-3">
+      <img src="{% static 'web/frnd.png' %}" class="img-fluid">
+      <div class="card-body">
+        <h5 class="card-header bg-transparent border-secondary ">MERA DOSTH</h5>
+      </div>
+    </div>
+     <div class="card border-secondary mb-3">
+      <img src="{% static 'web/kan.png' %}" class="img-fluid">
+      <div class="card-body">
+        <h5 class="card-header bg-transparent border-secondary ">KANGAE</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
